@@ -4,35 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/felhasznalo"
-        android:hint="Felhasználó"
+        android:hint="Email"
+        android:id="@+id/regEmail"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Felhasználónév"
+        android:id="@+id/regFelh"
         android:inputType="text"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/jelszo"
         android:hint="Jelszó"
+        android:id="@+id/regPass"
         android:inputType="textPassword"
         />
-    <Button
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bejelentkezés"
-        android:id="@+id/bejelentkezes"
+        android:hint="Teljes név"
+        android:id="@+id/regTeljesNev"
+        android:inputType="text"
         />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/RegRegister"
         android:text="Regisztráció"
-        android:id="@+id/regisztracio"
         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/regVisszaButton"
+        android:text="Vissza"
+        />
+
 
 </LinearLayout>
